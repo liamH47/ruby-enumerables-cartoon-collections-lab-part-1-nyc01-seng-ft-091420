@@ -8,5 +8,7 @@ def greet_characters(array)
 end
 
 def list_dwarves(array)
-  array.each_with_index
+  array.each_with_index(name, index) do
+    puts name, index + 1
+  end
 end
